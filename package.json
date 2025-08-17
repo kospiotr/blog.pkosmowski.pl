@@ -5,11 +5,15 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev-remote": "nuxt dev --remote",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "nuxt": "^4.0.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.30.0"
   }
 }

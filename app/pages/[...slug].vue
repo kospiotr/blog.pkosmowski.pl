@@ -4,7 +4,7 @@
     <div v-html="page.content"></div>
     <div v-if="page.meta">
       <h2>Page Metadata</h2>
-      <p>SEO Title: {{ page.meta.seoTitle }}</p>
+      <p>SEO Title: {{ page.meta.title }}</p>
       <p>Custom Layout: {{ page.meta.layout }}</p>
     </div>
   </main>
@@ -35,7 +35,7 @@ if (!page.value) {
 // Dynamically set page metadata using useHead
 if (page.value) {
   useHead({
-    title: page.value.meta?.seoTitle || page.value.title,
+    title: page.value.meta.title,
     meta: [
       {
         hid: 'description',
@@ -47,12 +47,3 @@ if (page.value) {
   });
 }
 </script>
-
-<style scoped>
-/* Add some basic styling */
-main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-</style>

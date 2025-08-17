@@ -1,0 +1,21 @@
+// Add this to your wrangler.jsonc
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "blog-pkosmowski-pl",
+  "main": "./.output/server/index.mjs",
+  "compatibility_date": "2025-08-17",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./.output/public/"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "400154c3521a48a78f61cddef5a95d60",
+      "preview_id": "c5d61a31fd5f4b6f812d4b963ebd0e65"
+    }
+  ]
+}
