@@ -1,0 +1,23 @@
+[
+  {
+    "path": "/",
+    "component": "src/pages/index.astro",
+    "layout": "src/layouts/MainLayout.astro",
+    "title": "Home Page",
+    "description": "Welcome to our homepage where you can find the latest updates and features."
+  },
+  {
+    "path": "/about",
+    "component": "src/pages/about.astro",
+    "layout": "src/layouts/MainLayout.astro",
+    "title": "About Us",
+    "description": "Learn more about our mission, vision, and team."
+  },
+  {
+    "path": "/contact",
+    "component": "src/pages/contact.astro",
+    "layout": "src/layouts/MainLayout.astro",
+    "title": "Contact Us",
+    "description": "Get in touch with us through our contact form or find our contact details."
+  }
+]
