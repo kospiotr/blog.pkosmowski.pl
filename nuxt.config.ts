@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     preset: "cloudflare-worker",
     storage: {
       db: {
-        driver: 'cloudflare-kv-binding',
+        driver: 'memory',
         /* redis connector options */
       }
     },

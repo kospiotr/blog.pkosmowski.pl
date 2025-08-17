@@ -35,12 +35,12 @@ if (!page.value) {
 // Dynamically set page metadata using useHead
 if (page.value) {
   useHead({
-    title: page.value.meta.title,
+    title: page.value.title,
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: page.value.meta?.description || '',
+        content: page.value?.description || '',
       },
       // You can add more meta tags here based on your database fields
     ],

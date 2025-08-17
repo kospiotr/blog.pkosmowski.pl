@@ -1,9 +1,8 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
-admin
+  Dashboard
 </template>
 
 <style scoped>
